@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BRUMALIA — La Saga de los Titanes</title>
+
+<style>
+body{
+    margin:0;
+    font-family:"Georgia", serif;
+    background:#05080d;
+    color:#eaeaea;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    background:#0b1220;
+    position:sticky;
+    top:0;
+}
+
+nav button{
+    background:none;
+    border:1px solid #4aa3ff;
+    color:#4aa3ff;
+    padding:8px 14px;
+    cursor:pointer;
+}
+
+nav button:hover{
+    background:#4aa3ff;
+    color:black;
+}
+
+section{
+    display:none;
+    padding:40px;
+    max-width:900px;
+    margin:auto;
+}
+
+section.activa{
+    display:block;
+}
+
+h1,h2{
+    text-align:center;
+}
+
+.caja{
+    background:#0e1628;
+    padding:20px;
+    margin-top:20px;
+    border-radius:8px;
+}
+
+.autor{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.autor img{
+    width:120px;
+    border-radius:10px;
+}
+
+.era-btn{
+    margin-top:20px;
+    padding:12px;
+    border:1px solid #6ecbff;
+    cursor:pointer;
+    text-align:center;
+}
+
+.era-btn:hover{
+    background:#6ecbff;
+    color:black;
+}
+
+.era-texto{
+    display:none;
+    margin-top:15px;
+    background:#0e1628;
+    padding:20px;
+    border-radius:8px;
+    text-align:left;
+}
+
+.galeria{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+    flex-wrap:wrap;
+}
+
+.galeria img{
+    width:150px;
+    border-radius:6px;
+}
+
+.proyecto{
+    margin-top:20px;
+    padding:15px;
+    border:1px solid #aaa;
+}
+
+.proyecto .info{
+    display:none;
+    margin-top:10px;
+}
+
+.proyecto:hover .info{
+    display:block;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<button onclick="mostrarSeccion('inicio')">Inicio</button>
+<button onclick="mostrarSeccion('proyectos')">Proyectos</button>
+<button onclick="mostrarSeccion('descargas')">Descargables</button>
+<button onclick="mostrarSeccion('videos')">Videos</button>
+<button onclick="mostrarSeccion('lore')">Lore</button>
+<button onclick="mostrarSeccion('participantes')">Participantes</button>
+</nav>
+
+<!-- ================= INICIO ================= -->
+<section id="inicio" class="activa">
+<h1>LA SAGA DE LOS TITANES</h1>
+
+<div class="caja autor">
+<img src="autor.jpg" alt="Autor">
+<div>
+<strong>BIENVENIDOS A LA SAGA DE LOS TITANES</strong><br><br>
+
+Antes de que existieran los reinos, antes incluso del tiempo, tres entidades dieron forma a la creación.<br>
+No fueron dioses.<br>
+Fueron los Titanes.<br><br>
+
+El Titán de Hielo fue el primero en despertar.<br>
+De su aliento nacieron los mares, los bosques y las montañas.<br>
+Él otorgó vida a la naturaleza y dio origen a los seres vivos que habitaron el mundo.<br>
+Donde caminó, la creación aprendió a respirar.<br><br>
+
+El Titán de Fuego moldeó la tierra y los planetas.<br>
+En su núcleo ardían las emociones: la ira, la esperanza, el miedo y la pasión.<br>
+Gracias a él, la vida no solo existió… sintió.<br><br>
+
+Por último, surgió el Titán del Cosmos.<br>
+Constructor de estrellas, arquitecto de galaxias, señor del vacío infinito.<br><br>
+
+Pero ese poder lo corrompió.
+</div>
+</div>
+</section>
+
+<!-- ================= PROYECTOS ================= -->
+<section id="proyectos">
+<h2>PROYECTOS</h2>
+
+<div class="proyecto">
+<strong>BRUMALIA</strong>
+<div class="info">
+Proyecto narrativo principal ambientado tras la caída de los Titanes.
+</div>
+</div>
+</section>
+
+<!-- ================= DESCARGABLES ================= -->
+<section id="descargas">
+<h2>DESCARGABLES</h2>
+<div class="caja">
+PRÓXIMAMENTE
+</div>
+</section>
+
+<!-- ================= VIDEOS ================= -->
+<section id="videos">
+<h2>VIDEOS</h2>
+<div class="caja">
+<a href="https://youtube.com/shorts/y_AHhYIEIAU?si=44hY2qnDjEqUqjyd" target="_blank">▶ Short</a><br><br>
+<a href="https://youtu.be/mutVCOHYx5o?si=YvXUiUAqPc1tvqjx" target="_blank">▶ Video</a>
+</div>
+</section>
+
+<!-- ================= LORE ================= -->
+<section id="lore">
+<h2>EL LORE</h2>
+
+<div class="era-btn" onclick="toggleEra('era1','era1_mystical.mp3')">
+ERA I — MYSTICAL CRAFT
+</div>
+<div id="era1" class="era-texto">
+<strong>La Era de la Creación Viva</strong><br>
+(Muchos siglos antes de la desaparición de los Titanes)<br><br>
+
+Mystical Craft fue un mundo abundante, místico y vibrante, nacido directamente bajo la mirada de los Tres Titanes.
+La tierra estaba saturada de vida: minerales imposibles, criaturas jamás vistas y una magia tan natural como el aire.<br><br>
+
+Durante esta era, los Titanes aún caminaban o se manifestaban en el mundo.
+No siempre con forma física, sino como señales de su presencia:<br><br>
+
+— Armaduras elementales samurái, una de agua y otra de fuego, vistas marchando solas en antiguos campos de batalla.<br>
+— Orbes brillantes en los cielos, que algunos juraban eran fragmentos del poder del Titán del Cosmos observando su creación.<br><br>
+
+Fue también la era de los antiguos guerreros.<br><br>
+
+Las crónicas hablan de un grupo que viajó hasta un pueblo ancestral, guiados por profecías que anunciaban la apertura de un portal.
+A través de él emergió el Primer y Ancestral Centinela, una entidad creada para custodiar el equilibrio mágico.<br><br>
+
+Tras ser derrotado, ese Centinela no fue destruido…
+Fue transformado.<br><br>
+
+De su legado nació la Organización Centinela, fundada con un solo propósito:<br><br>
+
+Evitar que los objetos y reliquias mágicas cayeran en manos equivocadas.<br><br>
+
+Mystical Craft fue el punto más alto de la creación.
+Pero ningún auge es eterno.
+
+<div class="galeria">
+<img src="MYC_1.jpg">
+<img src="MYC_2.jpg">
+<img src="MYC_3.jpg">
+</div>
+</div>
+
+<div class="era-btn" onclick="toggleEra('era2','era2_titanes.mp3')">
+ERA II — LA DESAPARICIÓN DE LOS TITANES
+</div>
+<div id="era2" class="era-texto">
+<strong>El Silencio de los Creadores</strong><br><br>
+
+El Titán del Cosmos, corrompido por su propio poder, alteró el equilibrio de la existencia.
+Su corrupción se filtró hacia el Titán de Hielo y el Titán de Fuego, deformando aquello que alguna vez fue armonía.<br><br>
+
+Para evitar la aniquilación total, los Titanes desaparecieron.
+Sellados, fragmentados o perdidos más allá de los planos conocidos.<br><br>
+
+El mundo sobrevivió… pero jamás volvió a ser el mismo.
+</div>
+
+<div class="era-btn" onclick="toggleEra('era3','era3_jnmedieval.mp3')">
+ERA III — JN MEDIEVAL
+</div>
+<div id="era3" class="era-texto">
+<strong>La Era de la Tierra Estéril</strong><br>
+(100 años después de la desaparición de los Titanes)<br><br>
+
+Cien años después, el mundo era plano, limitado y carente de abundancia.
+La magia se volvió escasa, los biomas repetitivos y la esperanza, frágil.<br><br>
+
+JNMedieval representó una era de supervivencia, no de gloria.<br><br>
+
+En este tiempo, un grupo de forasteros llegó a un pequeño pueblo buscando asilo.
+No eran héroes… aún no.<br><br>
+
+Cuando el pueblo fue amenazado por pillagers, los forasteros decidieron alzarse.
+Combatieron, resistieron y finalmente acabaron con la amenaza.<br><br>
+
+Ese acto marcó el nacimiento de nuevos héroes.
+Personas comunes obligadas a convertirse en leyenda.<br><br>
+
+Sin saberlo, habían llamado la atención de fuerzas mucho más antiguas.
+
+<div class="galeria">
+<img src="JNM_1.jpg">
+</div>
+</div>
+
+<div class="era-btn" onclick="toggleEra('era4','era4_brumalia.mp3')">
+ERA IV — BRUMALIA
+</div>
+<div id="era4" class="era-texto">
+<strong>El Engaño del Hielo</strong><br><br>
+
+Algunos de los héroes de JNMedieval fueron contactados por un mago del pueblo de Brumalia.
+Undoen prometía protección, equilibrio y salvación contra una extraña Bruma que consumía la región.<br><br>
+
+Pero la Bruma no era el enemigo.<br><br>
+
+Manipulados y guiados por mentiras, los héroes ayudaron al mago a cumplir su verdadero objetivo:
+despertar al Titán de Hielo.<br><br>
+
+Undoen buscaba absorber su poder y convertirse en una entidad suprema.
+Lo habría logrado… de no ser por Alexa.<br><br>
+
+Alexa, un ser de la misma dimensión que el mago, apareció de forma sutil:
+susurros, visiones, advertencias.
+Ella reveló la verdad y guió a los héroes hacia la traición necesaria.<br><br>
+
+Gracias a su intervención, Undoen fue detenido.
+Y el Titán de Hielo fue destruido definitivamente.<br><br>
+
+Por primera vez en la historia, uno de los creadores del mundo murió.<br><br>
+
+El equilibrio volvió… pero el vacío que dejó el Titán Helado jamás podrá llenarse.
+
+<div class="galeria">
+<img src="BRU_1.jpg">
+<img src="BRU_2.jpg">
+<img src="BRU_3.jpg">
+<img src="BRU_4.jpg">
+<img src="BRU_5.jpg">
+</div>
+</div>
+
+</section>
+
+<!-- ================= PARTICIPANTES ================= -->
+<section id="participantes">
+<h2>PARTICIPANTES</h2>
+
+<div class="caja">
+<ul>
+<li>Alan Iram</li>
+<li>Emmanuel Parra</li>
+<li>José Nicolás</li>
+<li>Marcelo</li>
+<li>Raudel Alejandro</li>
+<li>Regina Díaz</li>
+<li>Lucio Villarreal</li>
+<li>Javier Iker</li>
+<li>Deor Diego</li>
+<li>Carlos (Power Chomper)</li>
+<li>Leonardo Caracky</li>
+<li>Leomario (Leo)</li>
+<li>Sebastián (Tian)</li>
+<li>Ary</li>
+<li>Leonard</li>
+<li>Roberto</li>
+<li>Josué</li>
+<li>Prof. Roberto</li>
+<li>MelyGrz</li>
+<li>Bianca</li>
+<li>Brisia</li>
+<li>Karla</li>
+</ul>
+</div>
+</section>
+
+<script>
+let fondo = new Audio("fondo.mp3");
+fondo.loop = true;
+fondo.volume = 0.35;
+let musicaEra = null;
+let iniciado = false;
+
+function iniciarAudio(){
+    if(!iniciado){
+        fondo.play();
+        iniciado = true;
+    }
+}
+
+function mostrarSeccion(id){
+    iniciarAudio();
+    document.querySelectorAll("section").forEach(s=>s.classList.remove("activa"));
+    document.getElementById(id).classList.add("activa");
+
+    if(musicaEra){
+        musicaEra.pause();
+        musicaEra = null;
+        fondo.play();
+    }
+
+    document.querySelectorAll(".era-texto").forEach(e=>e.style.display="none");
+}
+
+function toggleEra(id, musica){
+    iniciarAudio();
+    document.querySelectorAll(".era-texto").forEach(e=>e.style.display="none");
+    document.getElementById(id).style.display="block";
+
+    fondo.pause();
+    if(musicaEra) musicaEra.pause();
+    musicaEra = new Audio(musica);
+    musicaEra.loop = true;
+    musicaEra.volume = 0.45;
+    musicaEra.play();
+}
+</script>
+
+</body>
+</html>
